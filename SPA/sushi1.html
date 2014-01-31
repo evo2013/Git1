@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+		<title>Sushi:: </title>
+		<link rel="stylesheet" href="gallery.css" type="text/css" media="screen"  charset="utf-8" />
+	</head>
+
+	<body>
+		<img src="images/sushilogo.png" alt="Sushi Logo" />
+		<h1>Pick Your Favorite!</h1>
+
+		<div id="container">
+			<p>
+				<img src="images/sushi1.jpg" alt="California Roll" />
+			</p>
+			<p class="caption">
+				California Roll
+			</p>
+		</div>
+
+		<p id="menu">
+			<a href="sushi1.html">California Roll</a> | 
+			<a href="sushi2.html">Ebi Roll</a> | 
+			<a href="sushi3.html">Maguro</a> |
+			<a href="sushi4.html">Seattle Roll</a> | 
+			<a href="sushi5.html">Shiromi</a> |
+			<a href="sushi6.html">Spicy Tuna</a> |
+			<a href="sushi7.html">Tekkamaki</a> 
+		</p>
+
+		<div id="vc-recommend-iframe-wrapper" style="height:300px"></div> 
+		<div id="vc-comments-iframe-wrapper"></div> 
+		<script type="text/javascript" src="http://api.vicomi.com/embed/widgets.js?access_token=cab6d931ed4870a52dbb0bd6890e0e19">
+		</script> 
+			
+
+		<script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"> 
+		</script>
+
+		<script type="text/javascript" charset="utf-8">
+			var pictures, $menu_links = $("#menu a"), $title = $("title"), $image = $("#container img"), $caption = $(".caption");
+			
+			$.get("pictures.json", function(data){
+					pictures = data;
+			})
+			
+			$menu_links.click(function(){
+				var index = $menu_links.index(this);
+				var picture = pictures[index].picture;
+				$caption.text(picture.caption);
+				$image.attr("src", picture.source);
+				$title.text("My Favorite - " + picture.caption);
+				return false;
+			})
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,40 @@
+body 
+{
+	background:#eee;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+}
+
+h1 
+{
+	text-align:center;
+}
+
+#container, #menu
+{
+	width:600px;
+	margin:auto;
+	background:#fff;
+	padding:10px;
+	margin-top:10px;
+	margin: 0 auto;
+	text-align:center;
+	border:1px solid #777;
+}
+
+.caption 
+{
+	font-weight:bold;
+	font-style:italic;
+}
+
+a 
+{
+	color:#00f;
+}
+
+a:hover 
+{
+	color:#f00;
+}
+
+

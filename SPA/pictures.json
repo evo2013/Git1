@@ -1,0 +1,9 @@
+[	
+	{"picture": {"caption":"California Roll", "source":"images/sushi1.jpg"} },
+	{"picture": {"caption":"Ebi Roll", "source":"images/sushi2.jpg"} }, 
+	{"picture": {"caption":"Maguro", "source":"images/sushi3.jpg"} }, 
+	{"picture": {"caption":"Seattle Roll", "source":"images/sushi4.jpg"} }, 
+	{"picture": {"caption":"Shiromi", "source":"images/sushi5.jpg"} },
+	{"picture": {"caption":"Spicy Tuna", "source":"images/sushi6.jpg"} },
+	{"picture": {"caption":"Tekkamaki", "source":"images/sushi7.jpg"} }
+] 
